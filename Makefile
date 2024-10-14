@@ -17,8 +17,6 @@ endif
 SRC := $(wildcard $(SRC_DIR)/*.c)
 OBJ := $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(SRC))
 
-TARGET := grue
-
 ifeq ($(OS),Windows_NT)
 	TARGET := $(BIN_DIR)/grue.exe
 else
