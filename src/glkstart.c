@@ -7,3 +7,6 @@ int glk_startup_code(glk_startup_t *data)
 
   return TRUE;
 }
+
+glk_argumentlist_t glk_arguments[] = {
+    {NULL, glk_arg_End, NULL}};
